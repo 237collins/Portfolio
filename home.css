@@ -1,0 +1,128 @@
+/* Styles de base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section principale */
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+
+/* Section À propos de moi */
+.about-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    width: 500px;
+    height: 100px;
+}
+
+.about-image {
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 130px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+/* Section Projets */
+.projects-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Section Contact */
+.contact-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles du bouton */
+.contact-button:hover {
+    background-color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Mise en page adaptative */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
